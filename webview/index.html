@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="toolbar">
+    <button id="add">Add Layer</button>
+    <button id="save">Save</button>
+    <button id="generate-tf">Generate TF Code</button>
+</div>
+
+<div id="canvas"></div>
+
+<div id="property-panel">
+    <h3>Layer Properties</h3>
+    <label>Name: <input id="prop-name" type="text"></label>
+    <label>Units: <input id="prop-units" type="number" min="1" value="64"></label>
+    <label>Activation: 
+        <select id="prop-activation">
+            <option>ReLU</option>
+            <option>Sigmoid</option>
+            <option>Linear</option>
+        </select>
+    </label>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
